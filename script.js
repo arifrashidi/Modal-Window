@@ -4,7 +4,7 @@
 
 /* -------------------------------------------------------------------------- */
 
-// 🧡 General variable:
+// 🧡 General variables 
 
 // selector variable
 const modal = document.querySelector(".modal")
@@ -22,24 +22,11 @@ const open_modal = function () {
     overlay.classList.remove("hidden");
 }
 
-// -----------------
-
-// ❕ classlist ✨(DOM TOKEN LIST)
-// Returns the CSS classnames of an element.
-// TODO Syntax: ELEMENT.classlist.METHOD
-
-// ❕ classList.remove() ✨(DOM TOKEN LIST - METHOD)
-// Removes one or more tokens from the list
-// TODO Syntax: ELEMENT.classlist.remove("SELECTOR");
-
-// ❕ querySelectorAll() ✨(HTML DOM DOCUMENT)
-// Target all selector that we want.
-// TODO Syntax: document.querySelectorAll("SELECTOR");
-
 /* -------------------------------------------------------------------------- */
 
-// 🧡 Loop all the selector:
-// 🧡 execute function when the button is clicked:
+// 🧡 Window Functionality 
+// 1. Loop all the selector.
+// 2. Execute function when the button is clicked .
 
 // loop the same selector
 for ( let i = 0; i < button_open_modal.length; i++) {
@@ -52,7 +39,7 @@ overlay.addEventListener("click", close_modal);
 
 /* -------------------------------------------------------------------------- */
 
-// 🧡 Press ESC keypress to perform the function
+// 🧡 Press ESC keypress to perform the function 
 // 📝 When we use "keydown", the information about which key was pressed will be stored...
 // and the information will be stored in parameter function
 
@@ -64,17 +51,3 @@ document.addEventListener("keydown", function (para_key) {
         close_modal()
     }
 })
-
-// -----------------
-
-// ❕ "keydown" ✨(HTML DOM EVENT - KEYBOARD EVENT)
-//  Event occurs when the user is pressing a key (not fired continuously)
-// TODO Syntax: ELEMENT..addEventListener("keydown", FUNCTION)
-
-// ❕ key ✨(HTML DOM EVENT - KEYBOARD EVENT - METHOD)
-// Returns the input key that was pressed when a key event occured
-// TODO Syntax: EVENT.key
-
-// ❕ classList.contain() ✨(DOM TOKEN LIST - METHOD)
-// Returns TRUE if a DOMTokenList contains a class, otherwise FALSE
-// TODO Syntax:  ELEMENT.classlist.contain("SELECTOR");
