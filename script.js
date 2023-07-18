@@ -1,9 +1,8 @@
 
-/* -------------------------------------------------------------------------- */
+//* --------------------------------------------------------------------------
 "use strict"
 
-/* -------------------------------------------------------------------------- */
-
+//* --------------------------------------------------------------------------
 // 🧡 General variables 
 
 // selector variable
@@ -22,8 +21,7 @@ const open_modal = function () {
     overlay.classList.remove("hidden");
 }
 
-/* -------------------------------------------------------------------------- */
-
+//* --------------------------------------------------------------------------
 // 🧡 Window Functionality 
 // 1. Loop all the selector.
 // 2. Execute function when the button is clicked .
@@ -37,13 +35,12 @@ for ( let i = 0; i < button_open_modal.length; i++) {
 button_close_modal.addEventListener("click", close_modal);
 overlay.addEventListener("click", close_modal);
 
-/* -------------------------------------------------------------------------- */
-
+//* --------------------------------------------------------------------------
 // 🧡 Press ESC keypress to perform the function 
 // 📝 When we use "keydown", the information about which key was pressed will be stored...
-// and the information will be stored in parameter function
+// and the information will be stored in parameter function.
 
-document.addEventListener("keydown", function (para_key) {
+document.addEventListener("keydown", function(para_key) {
     // test key function
     console.log(para_key.key);
     // closed modal when ESC key is pressed 
@@ -51,3 +48,5 @@ document.addEventListener("keydown", function (para_key) {
         close_modal()
     }
 })
+
+//* --------------------------------------------------------------------------
